@@ -1,0 +1,28 @@
+.about {
+  &--nopadding {
+    padding-top: 0;
+  }
+  &__list {
+    display: flex;
+  }
+  &__item {
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+  &__img-wrapper {
+    position: relative;
+  }
+  &__img-text {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    padding: 27px 10px;
+    width: 100%;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    color: $secondary-color;
+    background-color: rgba(47, 48, 58, 0.8);
+  }
+}
