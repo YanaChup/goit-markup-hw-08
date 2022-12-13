@@ -64,6 +64,13 @@ img {
   }
 }
 
+.title {
+  margin-bottom: 50px;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -283,6 +290,11 @@ img {
   color: #757575;
 }
 
+@media screen and (max-width: 1199px) {
+  .about {
+    display: none;
+  }
+}
 .about--nopadding {
   padding-top: 0;
 }
