@@ -3,23 +3,35 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
   }
   &__item {
-    &:not(:last-child) {
-      margin-right: 30px;
+    width: calc((100% - 30px) / 2);
+    @media screen and (min-width: 768px) {
+      width: calc((100% - 60px) / 3);
+    }
+    @media screen and (min-width: 1200px) {
+      width: calc((100% - 150px) / 6);
     }
   }
   &__link {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 170px;
+    width: 210px;
     height: 92px;
     border: 1px solid $icon-color;
     transition: border $transition-dur-and-func;
     &:hover,
     &:focus {
       border: 1px solid $accent-color;
+    }
+    @media screen and (min-width: 768px) {
+      width: 226px;
+    }
+    @media screen and (min-width: 1200px) {
+      width: 170px;
     }
   }
   &__icon {
