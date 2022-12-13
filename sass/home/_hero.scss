@@ -24,3 +24,30 @@
     text-transform: uppercase;
   }
 }
+// .features {
+//   &__list {
+//     display: flex;
+//   }
+//   &__item {
+//     width: 270px;
+//     &:not(:last-child) {
+//       margin-right: 30px;
+//     }
+//   }
+//   &__icon-wrapper {
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     margin-bottom: 30px;
+//     height: 120px;
+//     background-color: #f5f4fa;
+//   }
+//   &__heading {
+//     margin-bottom: 10px;
+//     text-transform: uppercase;
+//   }
+//   &__text {
+//     line-height: 24px;
+//     color: $text-color;
+//   }
+// }
