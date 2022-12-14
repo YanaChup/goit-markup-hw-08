@@ -180,7 +180,6 @@ img {
   display: block;
 }
 .mobile-menu__list {
-  margin-bottom: 302px;
   overflow: auto;
 }
 .mobile-menu__item {
@@ -198,7 +197,7 @@ img {
 }
 
 .menu-contact {
-  margin-bottom: 64px;
+  margin-top: 302px;
 }
 .menu-contact__item {
   margin-bottom: 32px;
@@ -218,6 +217,7 @@ img {
 
 .menu-icon {
   display: flex;
+  margin-top: 64px;
 }
 .menu-icon__item {
   padding-left: 10px;

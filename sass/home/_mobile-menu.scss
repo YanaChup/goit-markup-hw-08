@@ -36,7 +36,6 @@
     display: block;
   }
   &__list {
-    margin-bottom: 302px;
     overflow: auto;
   }
   &__item {
@@ -54,7 +53,7 @@
   }
 }
 .menu-contact {
-  margin-bottom: 64px;
+  margin-top: 302px;
   &__item {
     margin-bottom: 32px;
   }
@@ -73,6 +72,7 @@
 }
 .menu-icon {
   display: flex;
+  margin-top: 64px;
   &__item {
     padding-left: 10px;
     padding-right: 10px;
