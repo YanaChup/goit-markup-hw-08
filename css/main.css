@@ -210,6 +210,11 @@ img {
   letter-spacing: 0.02em;
   color: #757575;
 }
+.menu-contact__link--color {
+  font-size: 34px;
+  line-height: 40px;
+  color: #2196f3;
+}
 
 .menu-icon {
   display: flex;
