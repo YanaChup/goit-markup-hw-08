@@ -22,6 +22,7 @@
     width: 210px;
     height: 92px;
     border: 1px solid $icon-color;
+    border-radius: 3px;
     transition: border $transition-dur-and-func;
     &:hover,
     &:focus {
