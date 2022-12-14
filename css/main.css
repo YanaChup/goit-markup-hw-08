@@ -391,11 +391,17 @@ img {
 .hero__title {
   margin-bottom: 30px;
   color: #ffffff;
-  font-size: 44px;
+  font-size: 26px;
   font-weight: 900;
-  line-height: 60px;
+  line-height: 42px;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+}
+@media screen and (min-width: 1200px) {
+  .hero__title {
+    font-size: 44px;
+    line-height: 60px;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -764,9 +770,14 @@ img {
   top: 50%;
   transform: translate(-50%, -50%) scale(1);
   padding: 40px;
-  min-width: 528px;
+  min-width: 450px;
   background-color: #ffffff;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 1200px) {
+  .modal {
+    min-width: 528px;
+  }
 }
 .modal__close-btn {
   position: absolute;
@@ -789,6 +800,139 @@ img {
 
 .modal__close-btn:hover .modal__close-icon {
   fill: #2196f3;
+}
+
+.register-form__title {
+  margin-bottom: 12px;
+  font-size: 20px;
+  line-height: 23px;
+  font-weight: 700;
+  text-align: center;
+}
+.register-form__group {
+  margin-bottom: 20px;
+}
+.register-form__wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.register-form__wrap:not(:last-child) {
+  margin-bottom: 10px;
+}
+.register-form__label {
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.01em;
+  color: #757575;
+}
+.register-form__field {
+  padding-left: 42px;
+  padding-right: 12px;
+  width: 100%;
+  height: 40px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  outline: transparent;
+  border-radius: 4px;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.register-form__field:focus {
+  border-color: #2196f3;
+}
+.register-form__icon-inner {
+  position: relative;
+}
+.register-form__icon {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  fill: #212121;
+  top: 50%;
+  left: 12px;
+  transform: translatey(-50%);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.register-form__message {
+  resize: none;
+  padding: 12px 16px;
+  height: 120px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  outline: none;
+  border-radius: 4px;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.register-form__message:focus {
+  border-color: #2196f3;
+}
+.register-form__message::-moz-placeholder {
+  color: rgba(117, 117, 117, 0.5);
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.01em;
+}
+.register-form__message:-ms-input-placeholder {
+  color: rgba(117, 117, 117, 0.5);
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.01em;
+}
+.register-form__message::placeholder {
+  color: rgba(117, 117, 117, 0.5);
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.01em;
+}
+.register-form__agreement {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 30px;
+}
+.register-form__agreement-text {
+  font-size: 12px;
+  line-height: 24px;
+  color: #757575;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+@media screen and (min-width: 1200px) {
+  .register-form__agreement-text {
+    font-size: 14px;
+  }
+}
+.register-form__agreement-link {
+  color: #2196f3;
+  text-decoration: underline;
+}
+.register-form__btn {
+  display: block;
+  margin: 0 auto;
+}
+
+.register-form__field:focus + .register-form__icon {
+  fill: #2196f3;
+}
+
+.register-form__icon-uncheck {
+  fill: #212121;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.register-form__checkbox:checked + .register-form__agreement-icon > .register-form__icon-uncheck {
+  opacity: 0;
+}
+
+.register-form__icon-check {
+  opacity: 0;
+  fill: #2196f3;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.register-form__checkbox:checked + .register-form__agreement-icon > .register-form__icon-check {
+  opacity: 1;
 }
 
 .projects-filter {
@@ -887,131 +1031,4 @@ img {
 .projects__link:hover .projects__overlay-text-inner,
 .projects__link:focus .projects__overlay-text-inner {
   transform: translatey(0);
-}
-
-.register-form__title {
-  margin-bottom: 12px;
-  font-size: 20px;
-  line-height: 23px;
-  font-weight: 700;
-  text-align: center;
-}
-.register-form__group {
-  margin-bottom: 20px;
-}
-.register-form__wrap {
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
-}
-.register-form__wrap:not(:last-child) {
-  margin-bottom: 10px;
-}
-.register-form__label {
-  font-size: 12px;
-  line-height: 14px;
-  letter-spacing: 0.01em;
-  color: #757575;
-}
-.register-form__field {
-  padding-left: 42px;
-  padding-right: 12px;
-  width: 100%;
-  height: 40px;
-  border: 1px solid rgba(33, 33, 33, 0.2);
-  outline: transparent;
-  border-radius: 4px;
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.register-form__field:focus {
-  border-color: #2196f3;
-}
-.register-form__icon-inner {
-  position: relative;
-}
-.register-form__icon {
-  position: absolute;
-  width: 18px;
-  height: 18px;
-  fill: #212121;
-  top: 50%;
-  left: 12px;
-  transform: translatey(-50%);
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.register-form__message {
-  resize: none;
-  padding: 12px 16px;
-  height: 120px;
-  border: 1px solid rgba(33, 33, 33, 0.2);
-  outline: none;
-  border-radius: 4px;
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.register-form__message:focus {
-  border-color: #2196f3;
-}
-.register-form__message::-moz-placeholder {
-  color: rgba(117, 117, 117, 0.5);
-  font-size: 12px;
-  line-height: 14px;
-  letter-spacing: 0.01em;
-}
-.register-form__message:-ms-input-placeholder {
-  color: rgba(117, 117, 117, 0.5);
-  font-size: 12px;
-  line-height: 14px;
-  letter-spacing: 0.01em;
-}
-.register-form__message::placeholder {
-  color: rgba(117, 117, 117, 0.5);
-  font-size: 12px;
-  line-height: 14px;
-  letter-spacing: 0.01em;
-}
-.register-form__agreement {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 8px;
-  margin-bottom: 30px;
-}
-.register-form__agreement-text {
-  line-height: 24px;
-  color: #757575;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
-}
-.register-form__agreement-link {
-  color: #2196f3;
-  text-decoration: underline;
-}
-.register-form__btn {
-  display: block;
-  margin: 0 auto;
-}
-
-.register-form__field:focus + .register-form__icon {
-  fill: #2196f3;
-}
-
-.register-form__icon-uncheck {
-  fill: #212121;
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.register-form__checkbox:checked + .register-form__agreement-icon > .register-form__icon-uncheck {
-  opacity: 0;
-}
-
-.register-form__icon-check {
-  opacity: 0;
-  fill: #2196f3;
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.register-form__checkbox:checked + .register-form__agreement-icon > .register-form__icon-check {
-  opacity: 1;
 }/*# sourceMappingURL=main.css.map */
