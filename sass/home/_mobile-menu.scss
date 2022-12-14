@@ -12,6 +12,9 @@
     visibility $transition-dur-and-func;
   visibility: hidden;
   pointer-events: none;
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
   &.is-open {
     opacity: 1;
     visibility: visible;
